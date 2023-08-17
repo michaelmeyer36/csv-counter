@@ -27,7 +27,8 @@ def calculate_total_money(csv_file):
     return total_money
 
 if __name__ == "__main__":
-    csv_folder = r"C:\Users\wpn36\Documents\csv counter\csv"  # Replace with the path to your CSV folder
+    script_folder = os.path.dirname(os.path.abspath(__file__))
+    csv_folder = os.path.join(script_folder, "csv")
     
     for filename in os.listdir(csv_folder):
         if filename.endswith(".csv"):
@@ -37,7 +38,3 @@ if __name__ == "__main__":
             print(f"CSV File: {filename}")
             print(f"Total amount of money: ${total_money:.2f}")
             print("=" * 30)
-
-
-
-
