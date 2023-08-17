@@ -16,8 +16,7 @@ Navigate to the count.py directory using cd.
 
 # Run the script:
 
-type: python count.py
-into the termnail 
+python count.py
 
 # Example Output:
 
